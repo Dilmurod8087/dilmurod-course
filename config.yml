@@ -1,0 +1,16 @@
+title: Dilmurod
+description: Salom mening dilmurod kursimga hush kelibsiz
+template:
+  repo: dilmurod-template
+  name: dilmurod
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
